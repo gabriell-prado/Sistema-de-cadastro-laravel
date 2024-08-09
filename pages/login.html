@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Trabalho 1 - Programação Web">
+    <meta name="author" content="Gabriel Prado">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Login</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="masthead clearfix" id="header">
+                <div class="inner">
+                    <h3 class="masthead-brand">Sistema</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="./index.html">Home</a></li>
+                            <li class="active"><a href="./login.html">Fazer login</a></li>
+                            <li><a href="./cadastro.html">Cadastre-se</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="custom-container">
+                <form action="" method="post">
+                    <div class="inner custom">
+                        <h2 class="custom-heading">Fazer Login</h2>
+                    </div>
+                    <div class="custom-container form">
+                        <div class="inner custom bg-white">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input class="form-control" type="email" name="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input class="form-control" type="password" name="senha" id="senha" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-container">
+                        <input class="btn btn-lg btn-default" id="login" type="button" value="Login">
+                    </div>
+                </form>
+            </div>
+            <div class="mastfoot clearfix" id="footer">
+                <p>Feito por <strong>Gabriel Prado</strong></p>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha384-nvAa0+6Qg*clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("login").addEventListener("click", function () {
+                    window.location.href = "./Perfil.html";
+                });
+            });
+
+            window.onscroll = function () {
+                changeHeaderFooterColor();
+            };
+            function changeHeaderFooterColor() {
+                var header = document.getElementById("header");
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    header.style.backgroundColor = "#333";
+                    header.style.borderBottom = "#fff solid 1px"
+                } else {
+                    header.style.backgroundColor = "transparent";
+                    header.style.borderBottom = "#fff solid 0px"
+                }
+            }
+        </script>
+</body>
+
+</html>

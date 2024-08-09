@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Trabalho 1 - Programação Web">
+    <meta name="author" content="Gabriel Prado">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Meu Perfil</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="masthead clearfix" id="header">
+                <div class="inner">
+                    <h3 class="masthead-brand">Sistema</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="./index.html">Home</a></li>
+                            <li class="dropdown nav-user active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Usuário
+                                    <img src="../images/perfil.jpg" alt="Usuário" class="user-photo">
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="./alterar_dados.html">Alterar dados de usuário</a></li>
+                                    <li><a href="./comentarios.html">Adicionar comentários</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="./index.html">Sair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="inner custom">
+                <h1 class="custom-heading">Parabéns Você está Logado!</h1>
+                <p class="lead">Clique no perfil, no menu para adicionar um comentario ou alterar Informações cadastrais.
+                </p>
+              </div>
+            <div class="mastfoot clearfix" id="footer">
+                <p>Feito por <strong>Gabriel Prado</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        window.onscroll = function () {
+            changeHeaderFooterColor();
+        };
+
+        function changeHeaderFooterColor() {
+            var header = document.getElementById("header");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.style.backgroundColor = "#333";
+                header.style.borderBottom = "#fff solid 1px"
+            } else {
+                header.style.backgroundColor = "transparent";
+                header.style.borderBottom = "#fff solid 0px"
+            }
+        }
+    </script>
+</body>
+
+</html>

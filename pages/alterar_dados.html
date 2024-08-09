@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Trabalho 1 - Programação Web">
+    <meta name="author" content="Gabriel Prado">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Cadastre-se</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="masthead clearfix" id="header">
+                <div class="inner">
+                    <h3 class="masthead-brand">Sistema</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="./index.html">Home</a></li>
+                            <li class="dropdown nav-user active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Usuário
+                                    <img src="../images/perfil.jpg" alt="Usuário" class="user-photo">
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="./alterar_dados.html">Alterar dados de usuário</a></li>
+                                    <li><a href="./comentarios.html">Adicionar comentários</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="./index.html">Sair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="custom-container">
+                <form action="" method="post">
+                    <div class="inner custom">
+                        <h2 class="custom-heading">Informações Pessoais</h2>
+                    </div>
+                    <div class="custom-container form">
+                        <div class="inner custom bg-white">
+                            <div class="form-group col-md-6">
+                                <label for="name">Nome</label>
+                                <input class="form-control" type="text" name="name" id="name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input class="form-control" type="text" name="sobrenome" id="sobrenome">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="cpf">CPF</label>
+                                <input class="form-control" type="text" name="cpf" id="cpf" placeholder="000.000.000-00"
+                                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="rg">RG</label>
+                                <input class="form-control" type="text" name="rg" id="rg" placeholder="00.000.000-0"
+                                    pattern="\d{2}\.\d{3}\.\d{3}-\d{1}">
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="email">E-mail</label>
+                                <input class="form-control" type="email" name="email" id="email">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="telefone">Telefone</label>
+                                <input class="form-control" type="tel" name="telefone" id="telefone"
+                                    placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input class="form-control" type="password" name="senha" id="senha">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-container">
+                        <div class="inner custom">
+                            <h2 class="custom-heading">Endereço</h2>
+                        </div>
+                        <div class="custom-container form">
+                            <div class="inner custom bg-white">
+                                <div class="form-group col-md-8">
+                                    <label for="rua">Rua</label>
+                                    <input class="form-control" type="text" name="rua" id="rua">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="numero">Número</label>
+                                    <input class="form-control" type="text" name="numero" id="numero">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="cidade">Cidade</label>
+                                    <input class="form-control" type="text" name="cidade" id="cidade">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="estado">Estado</label>
+                                    <select class="form-control" id="estado" name="estado">
+                                        <option value="">Selecione</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                        <option value="EX">Estrangeiro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="cep">Cep</label>
+                                    <input class="form-control" type="text" name="cep" id="cep" pattern="\d{5}-\d{3}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="complemento">Complemento</label>
+                                    <input class="form-control" type="text" name="complemento" id="complemento">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-container">
+                        <div class="inner custom">
+                            <h2 class="custom-heading">Informações do Cartão</h2>
+                        </div>
+                        <div class="custom-container form">
+                            <div class="inner custom bg-white">
+                                <div class="form-group col-md-6">
+                                    <label for="numero-cartao">Numero do Cartão</label>
+                                    <input class="form-control" type="text" name="numero-cartao" id="numero-cartao"
+                                        pattern="\d{16}">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="nome-titular">Nome do Titular</label>
+                                    <input class="form-control" type="text" name="nome-titular" id="nome-titular">
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label for="validade">Validade</label>
+                                    <input class="form-control" type="text" name="validade" id="validade"
+                                        placeholder="mm/aa" pattern="\d{2}/\d{2}">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="cvv">CVV</label>
+                                    <input class="form-control" type="text" name="cvv" id="cvv" placeholder="***"
+                                        pattern="\d{3}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nome-cartao">Apelido do Cartão</label>
+                                    <input class="form-control" type="text" name="nome-cartao" id="nome-cartao">
+                                </div>
+                                <div class="form-group">
+                                    <label for="chave-pix">Chave Pix</label>
+                                    <input class="form-control" type="text" name="chave-pix" id="chave-pix">
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="custom-container">
+                <div class="inner custom">
+                    <h2 class="custom-heading">Confirmar Senha</h2>
+                </div>
+                <div class="custom-container form">
+                    <div class="inner custom bg-white">
+                        <div class="form-group">
+                            <label for="conf-senha">Confimar Senha</label>
+                            <input class="form-control" type="password" name="conf-senha" id="conf-senha" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-container">
+                <input class="btn btn-lg btn-default" id="alterar_dados" type="submit" value="Alterar Dados">
+            </div>
+        </div>
+    </div>
+    </form>
+    </div>
+    <div class="mastfoot clearfix" id="footer">
+        <p>Feito por <strong>Gabriel Prado</strong></p>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg*clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("alterar_dados").addEventListener("click", function () {
+                window.location.href = "./Perfil.html";
+            });
+        });
+
+        window.onscroll = function () {
+            changeHeaderFooterColor();
+        };
+        function changeHeaderFooterColor() {
+            var header = document.getElementById("header");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.style.backgroundColor = "#333";
+                header.style.borderBottom = "#fff solid 1px"
+            } else {
+                header.style.backgroundColor = "transparent";
+                header.style.borderBottom = "#fff solid 0px"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

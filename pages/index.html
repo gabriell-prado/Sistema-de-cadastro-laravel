@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trabalho 1 - Programação Web">
+  <meta name="author" content="Gabriel Prado">
+  <link rel="icon" href="../../favicon.ico">
+  <title>Cadastre-se</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="masthead clearfix" id="header">
+        <div class="inner">
+          <h3 class="masthead-brand">Sistema</h3>
+          <nav>
+            <ul class="nav masthead-nav">
+              <li class="active"><a href="./index.html">Home</a></li>
+              <li><a href="./login.html">Fazer login</a></li>
+              <li><a href="./cadastro.html">Cadastre-se</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="inner custom">
+        <div class="custom-container">
+          <h1 class="custom-heading">Sistema de cadastro</h1>
+          <p class="lead">Esse é um sistema de cadastro desenvolvido para a disciplina de programação de sistemas
+            web.<br>Para verificar todas as funcionalidades finalize o cadastro. Para fim de testes qualquer clique em Cadastre-se e Login irá para a página de perfil,
+            porém a lógica de verificação de dados já está inclusa no html</p>
+          <p class="lead">
+            <a href="./cadastro.html" class="btn btn-lg btn-default">Cadastre-se</a>
+          </p>
+          <p class="lead">
+            <a href="./admin.html" class="btn btn-lg btn-default">Entrar como admin</a>
+          </p>
+        </div>
+      </div>
+      <div class="mastfoot clearfix" id="footer">
+        <p>Feito por <strong>Gabriel Prado</strong></p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg*clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+      window.onscroll = function () {
+        changeHeaderFooterColor();
+      };
+      function changeHeaderFooterColor() {
+        var header = document.getElementById("header");
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          header.style.backgroundColor = "#333";
+          header.style.borderBottom = "#fff solid 1px"
+        } else {
+          header.style.backgroundColor = "transparent";
+          header.style.borderBottom = "#fff solid 0px"
+        }
+      }
+    </script>
+</body>
+
+</html>
